@@ -1,0 +1,17 @@
+#finishListdiv{
+    width:29.5%;
+    height: 65%;
+    float:left;/*왼쪽으로정렬*/
+    border: black solid;
+    
+}
+
+#finishListdiv h3{
+    text-align: center;
+}
+
+#finishList p{
+    font-size: 20px;
+    color: blue;
+    display: inline;
+}

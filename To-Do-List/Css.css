@@ -1,0 +1,71 @@
+
+        #wrapper{
+            width: 70%;
+            margin:0 auto;
+        }
+        /*문서 전체 스타일*/
+
+        
+        header{
+            height: 200px;
+            border: 2px solid black;
+            background-image:url('imageTodo.jpg');  
+            background-size: 100% 100%;
+            border-bottom: 0px;
+        }
+        header h1{
+            margin:0%;
+            margin-top: 40px;
+            font-size: 90px;
+        }
+       
+         a{
+            text-decoration: none;
+            color:black;
+        }
+     #section{
+          border : 2px solid black;
+          height: 1000px;
+          border-bottom: 0px;
+          position: relative;
+      }
+      #section::after{ /*가상클래스 만들기 이거로 배경만 흐릿하게 할 수 있다. */
+                        /*content 가 추가 되어야 after가 생성된다. */
+        background-image: url('bg-section.jpg');
+        background-size: 100% 100%;
+        top:0;
+        left:0;
+        position: absolute;
+        z-index: -10;
+        height: 1000px;
+        content: "";
+        width: 100%;
+        opacity: 0.6;
+      }
+      section h4{
+          text-align: center;
+          margin: 10px auto;
+          font-size: 40px;
+      }
+
+
+
+      footer{
+          border : 2px solid black;
+          height : 200px;
+          background-color: yellowgreen;
+          
+      }
+      footer p{
+          margin: 0;
+          font-size: 30px;
+          text-align: center;
+      }
+      #firstP{
+          margin-top: 30px;
+      }
+      
+
+       
+
+   

@@ -1,0 +1,32 @@
+#button-startnow{
+   
+   position: absolute;
+   top: 50%;
+   left: 45%;
+   width: 15%;
+   height: 8%;
+   font-size: 30px;
+   
+}
+
+#buttonUl{
+   position: absolute;/*가장 가까운 상위 요소를 기준으로 얼만큼 떨어뜨릴지*/
+   top: 85%;
+   left: 10%;
+   width: 70%;
+   display: flex;/*이 기능을 쓰면 유연하게 위치를 이동시킬수 있다.*/
+   justify-content: space-around;/*같은 간격으로 정렬 시켜주기*/
+}
+
+#buttonUl li{
+    list-style: none;
+    font-size: 40px;
+    display: inline;
+    
+    
+}
+#buttonUl button{
+    width: 150px;
+    height: 100px;
+    font-size: 35px;
+}
