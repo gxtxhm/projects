@@ -1,0 +1,106 @@
+body{
+    background-color: #ffefea;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
+
+header h1{
+    
+    text-align: center;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav .toggleBtn{
+    background-color : darksalmon;
+    color : white;
+    border-radius: 5px;
+    font-size: 16px;
+    border-style: none;
+    padding : 10px 10px;
+}
+
+content{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.TTSBox{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 24.3%;
+    height: 250px;
+    
+}
+.TTSBox img{
+    width: 100%;
+    height: 85%;
+    border-radius: 5px 5px 0 0 ;
+}
+.TTSBox p{
+    background-color : darksalmon;
+    color : white;
+    margin: 0;
+    
+    height: 15%;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    font-size: 24px;
+}
+
+.TTSArea{
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    width: 70%;
+    background-color:#333;
+    border-radius: 10px;
+    padding: 20px;
+    transform: translate(0,-800px);
+    transition: all 1s ease-in-out;
+}
+
+.TTSArea.show{
+    transform: translate(0,0px);
+}
+
+.TTSArea .CloseBtn{
+    text-align: center;
+    width: 20px;
+    float:right;
+}
+.TTSArea h2{
+    color: white;
+    font-size: 20px;
+}
+.TTSArea textarea{
+    width: 100%;
+    font-size: 18px;
+}
+.TTSArea .RBtn{
+    width: 100%;
+    margin: 15px 0 0 0;
+    padding: 0;
+    font-size: 20px;
+    background-color:darksalmon ;
+    color: white;
+}
+.TTSArea #Choice-lang{
+    width: 100%;
+    background-color:darksalmon ;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
