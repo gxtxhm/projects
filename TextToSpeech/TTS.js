@@ -1,11 +1,10 @@
-let createAreaButton = document.querySelector('.toggleBtn');
+let createAreaButton = document.querySelector('.toggleBtn');//토글버튼
+let closeBtn = document.querySelector('.CloseBtn');//x버튼
+let toggleBox = document.querySelectorAll(".TTSBox");//12개 박스들
+let ReadBtn = document.querySelector('.RBtn');//read text 버튼
+let Textarea = document.querySelector('#text');//textarea태그
+let voicesSelect = document.querySelector('#Choice-lang');//select태그
 let TTSArea = document.querySelector('.TTSArea');
-let closeBtn = document.querySelector('.CloseBtn');
-let toggleBox = document.querySelectorAll(".TTSBox");
-let ReadBtn = document.querySelector('.RBtn');
-let Textarea = document.querySelector('#text');
-let voicesSelect = document.querySelector('#Choice-lang');
-
 //EventListener 
 
 //ToggleTextBox버튼 클릭시 

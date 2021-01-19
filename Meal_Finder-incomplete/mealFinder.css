@@ -1,0 +1,63 @@
+body{
+    background-color: #2d2013;
+    color: white;
+}
+
+#content{
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    
+}
+header h1{
+    margin: 5 0 10px 0 ;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav #searchInput{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+nav button{
+    width: 40px; 
+    height: 37px;
+    border-radius: 4px;
+}
+nav #searchBtn{
+    margin-right: 10px;
+}
+
+
+.result_search h2{
+    text-align: center;
+}
+.result_search ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.result_search ul li{
+    margin: 10px;
+}
+.result_search ul li img{
+    width: 180px;
+    height: 180px;
+    border: white 5px solid;
+    border-radius: 2px;
+}
+
+.result_search img:hover{  
+    filter: brightness(60%);
+    
+}
+.onHover .onHoverText{
+    text-align: center;
+}
