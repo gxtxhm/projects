@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7cd840cbdc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/calculator.css">
+</head>
+<body>
+    <div class="content">
+        <nav>
+            <button><i class="fas fa-bars"></i></button>
+            <p class="notation">표준</p>
+            <button><i class="fas fa-expand"></i></button>
+        </nav>
+    
+        <div class="InputCalculator">
+            <p>123123+</p>
+        </div>
+        <div class="InputNum">
+            <p></p>
+        </div>
+        <div class="unknownBtn">
+            <button>MC</button>
+            <button>MR</button>
+            <button>M+</button>
+            <button>M-</button>
+            <button>MS</button>
+        </div>
+    
+        <div class="CalculatorBtn">
+            <button class="text" id="ParenthesesOpen">(</button>
+            <button class="text" id="ParenthesesClose">)</button>
+            <button class="text" id="removeAll">C</button>
+            <button class="text" id="backSpace"><i class="fas fa-backspace"></i></button>
+            <button class="text">1/x</button>
+            <button class="text">x^2</button>
+            <button class="text"><i class="fas fa-square-root-alt"></i></button>
+            <button class="text" id="division"><i class="fas fa-divide"></i></button>
+            <button class="number"id="7">7</button>
+            <button class="number"id="8">8</button>
+            <button class="number"id="9">9</button>
+            <button class="text" id="multifly"><i class="fas fa-times"></i></button>
+            <button class="number"id="4">4</button>
+            <button class="number"id="5">5</button>
+            <button class="number"id="6">6</button>
+            <button class="text" id="subtract"><i class="fas fa-minus"></i></button>
+            <button class="number"id="1">1</button>
+            <button class="number"id="2">2</button>
+            <button class="number"id="3">3</button>
+            <button class="text" id="add"><i class="fas fa-plus"></i></button>
+            <button class="text" id="changeSign">+/-</button>
+            <button class="number"id="0">0</button>
+            <button class="text">.</button>
+            <button class="text" id="substitution"><i class="fas fa-equals"></i></button>
+        </div>
+    </div>
+    <div class="finishList">
+        <p id="title">계산기록</p>
+        <ul id="ResultList">
+            <!-- <li>
+                <p class="formula">1+2=</p>
+                <p class="result_formula">3</p>
+            </li>
+            <li>
+                <p class="formula">(5-6)/2=</p>
+                <p class="result_formula">-0.5</p>
+            </li> -->
+            
+        </ul>
+    </div>
+    <script src="/stack.js"></script>
+    <script src="/calculator.js"></script>
+    <script src="/ConvToRPNExp.js"></script>
+    <script src="/EvalRPNExp.js"></script>
+    
+</body>
+</html>
