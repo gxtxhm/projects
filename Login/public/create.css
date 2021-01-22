@@ -1,0 +1,33 @@
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+#finishBtn{
+    width: 70px;
+    margin-left: 137px;
+    margin-top: 15px;
+    display: inline;
+}
+#cancelBtn{
+    width: 70px;
+    margin-left: 20px;
+    margin-top: 15px;
+    position: absolute;
+    top:158px;
+    left:207px
+}
+form{
+    width:350px;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+#inputId{
+    margin-left: 56px;
+}
+#inputPw{
+    margin-left: 40px;
+}
+#inputName{
+    margin-left: 72px;
+}
