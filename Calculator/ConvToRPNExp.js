@@ -11,7 +11,7 @@ function ConvToRPNExp(exp){//중위표기법이 적힌 문자열을 매개변수
     
     for(let i=0;i<exp.length;i++){
         //음수면
-        if(exp[i]==='-'&&!isNaN(exp[i+1])){
+        if(exp[i]==='-'&&isNaN(exp[i-1])){
             let imsi=exp[i];
 
             while(true){

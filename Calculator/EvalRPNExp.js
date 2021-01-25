@@ -7,7 +7,7 @@ const stack1 = new Stack(); //스택 생성
 function EvalRPNExp(exp){
     
     for(let i=0;i<exp.length;i++){
-        console.log(i);
+        
         //음의정수면
         if(exp[i]==='-'&&!isNaN(exp[i+1])){
             let j;
@@ -19,7 +19,8 @@ function EvalRPNExp(exp){
                     
             }
             i+=j-i;
-            console.log(imsi);
+            
+            console.log("음의 정수 : "+ imsi);
             stack.push(Number(imsi));
         }
 
@@ -37,12 +38,13 @@ function EvalRPNExp(exp){
             i+=j-i;
             console.log(imsi);
             stack.push(Number(imsi));
-        }
+        }   
 
         //연산자면
         else{
             if(exp[i]==',')
             {
+                
                 continue;
             }
             
