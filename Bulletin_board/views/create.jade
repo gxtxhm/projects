@@ -1,0 +1,35 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        |     
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        |     
+        title Document
+        |     
+        link(rel='stylesheet', href='/board.css')
+    body
+        .contents
+            header
+                h1 게시판 만들기
+            |     
+            |         
+            article
+                .list_header
+                    h2 글쓰기
+                |     
+                |             
+                form(action='/finishWrite', method='post')
+                    .Ahead
+                        p 제목
+                        |                     
+                        input(type='text', name='article_head')
+                    |                 
+                    p 본문
+                    |                 
+                    textarea(name='article_body', id='')
+                    |                 
+                    .createsubmitBtn
+                        input(type='submit')
+        |     
+        

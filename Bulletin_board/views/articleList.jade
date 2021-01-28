@@ -1,0 +1,49 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        |     
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        |     
+        title Document
+        |     
+        link(rel='stylesheet', href='/board.css')
+    body
+        .contents
+            header
+                h1 게시판 만들기
+            |     
+            |         
+            article
+                .list_header
+                    h2 글수정
+                |     
+                |      
+                -let length=_length
+                -let array= _contentsArray;       
+                form(action='/clickBtn', method='post')
+                    .Ahead
+                        p 제목
+                        |                     
+                        input(type='text', name='article_head' value=`${_title}`)
+                    |                 
+                    p 본문
+                    |                 
+                    textarea(name='article_body', id='')=_section
+                    |                 
+                    .createsubmitBtn
+                        input(type='submit' name="delete" value="삭제")
+                    .createsubmitBtn
+                        input(type='submit' name="edit" value="수정")
+                    if(length>0)
+                        ul.commentList
+                            -for(let i=0;i<length;i++)
+                                li.comment=array[i]
+                    .addComment
+                        textarea(name='addComment' placeholder='댓글쓰기')
+                    .addCommentBtn
+                        input(type='submit' name='comment' value='댓글 등록')
+
+                    
+
+

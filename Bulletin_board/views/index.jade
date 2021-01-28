@@ -1,0 +1,55 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        |     
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        |     
+        title Document
+        |     
+        link(rel='stylesheet', href='/board.css')
+    body
+        .contents
+            header
+                h1 게시판 만들기
+            |     
+            |         
+            article
+                .list_header
+                    h2 목록
+                    |                 
+                    form(action='/create_article', method='get')
+                        input.create_articleBtn(type='submit', value='글쓰기')
+                |     
+                |             
+                table
+                    tr
+                        td 글번호
+                        |                     
+                        td(class="title") 제목
+                        |                     
+                        td 작성자
+                        |                     
+                        td 작성일
+                        |                     
+                        td 조회수
+                    |                 
+                    
+                    -for(let i=0;i<2;i++)
+                        tr 
+                        -for(let j=0;j<5;j++)
+                            case j
+                                when 0: td 1 | 
+                                        
+                                when 1: td(class="title") |
+                                            a(href='http://')= title 
+                                        
+                                when 2: td creater |
+                                        
+                                when 3: td data |
+                                        
+                                when 4: td viewer |          
+                                        
+                    
+        |     
+        

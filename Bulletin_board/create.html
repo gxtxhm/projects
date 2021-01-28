@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/board.css">
+</head>
+<body>
+    <div class="contents">
+        <header>
+            <h1>게시판 만들기</h1>
+        </header>
+    
+        <article>
+            <div class="list_header">
+                <h2>글쓰기</h2>
+                
+                
+            </div>
+    
+            <form action="/" method="post">
+                <div class="Ahead">
+                    <p>제목</p>
+                    <input type="text" name="article_head">
+                </div>
+                <p>본문</p>
+                <textarea name="article_body" id="" ></textarea>
+                <div class="createsubmitBtn"><input type="submit"></div>
+            </form>
+    
+            <form action="" method="post">
+                <ul class="commentList">
+                    <li><div class="comment">1</div></li>
+                    <li><div class="comment">2</div></li>
+                    <li><div class="comment">3</div></li>
+                </ul>
+                <div class="addComment"><textarea name="addComment" placeholder="댓글쓰기"></textarea></div>
+                <div class="addCommentBtn"><input type="submit" name="comment" value="댓글 등록"></div>
+            </form>
+        </article>
+    
+    </div>
+</body>
+</html>

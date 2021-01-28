@@ -1,0 +1,89 @@
+
+body{
+    display: flex;
+    justify-content: center;
+}
+.contents{
+    border: 4px;
+    border-color: black;
+    width: 70%;
+}
+
+header{
+    width: 100%;
+    height: 20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+}
+
+article .list_header{
+    width: 100%;
+    
+}
+article .list_header h2{
+    text-align: center;
+}
+article .list_header input{
+    float: right;
+    margin-bottom: 10px;
+}
+
+article table{
+    border: black 3px solid;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+article table tr,td{
+    text-align: center;
+    border-bottom:black 2px solid;
+    padding: 20px;
+    text-align: center;
+}
+article table .title{
+    width: 40%;
+}
+
+
+article .Ahead input{
+    width: 600px;
+}
+article textarea{
+    width: 600px;
+    height: 400px;
+}
+
+article .createsubmitBtn{
+    width: 606px;
+}
+article .createsubmitBtn input{
+    float: right;
+}
+
+article .commentList{
+    width: 600px;
+    list-style: none;
+    padding-left: 0;
+    border: black 1px solid;
+    border-bottom: 0;
+    margin-top: 30px;
+}
+article .commentList .comment{
+    border-bottom: black 1px solid;
+    height: 50px;
+}
+article .addComment textarea{
+    width: 600px;
+    height: 50px;
+}
+article .addCommentBtn input{
+    float: right;
+}
