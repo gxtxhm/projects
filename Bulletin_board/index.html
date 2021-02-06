@@ -4,42 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="public/board.css">
+    <link rel="stylesheet" href="/login.css">
 </head>
 <body>
-    <div class="contents">
-        <header>
-            <h1>게시판 만들기</h1>
-        </header>
-    
-        <article>
-            <div class="list_header">
-                <h2>목록</h2>
-                <form action="/create_article" method="get">
-                    <input class="create_articleBtn" type="submit" value="글쓰기">123123213
-                </form>
-            </div>
-    
-            <table>
-                <tr>
-                    <td>글번호</td>
-                    <td class="title">제목</td>
-                    <td>작성자</td>
-                    <td>작성일</td>
-                    <td>조회수</td>
-                </tr>
+
+        <form action="/next"method="post">
+            <fieldset>
+                <legend>로그인 정보</legend><br>
+                <label for="">아이디<input id="inputId" type="text" name="Id" required></label><br>
+                <label for="">비밀번호<input id="inputPw"type="password" name="Password" required></label>
+                <input id="loginBtn"type="submit" name="login" value="로그인">
                 
-                <tr>
-                    <td>1</td>
-                    <td class="title"><a href="http://">hi</a></td>
-                    <td>macdollyh</td>
-                    <td>date</td>
-                    <td>100000</td>
-                </tr>
-            </table>
-    
-        </article>
-    
-    </div>
+            </fieldset>
+        </form>
+        <form action="/next"method="post"><input id="createBtn"type="submit" name="create" value="회원가입"></form>
+        
+        
 </body>
+
 </html>

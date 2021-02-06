@@ -14,6 +14,7 @@ html(lang='en')
                 h1 게시판 만들기
             |     
             |         
+            
             article
                 .list_header
                     h2 글수정
@@ -21,7 +22,12 @@ html(lang='en')
                 |      
                 -let length=_length
                 -let array= _contentsArray;       
+                
                 form(action='/clickBtn', method='post')
+                    .idValue
+                        input(type='text',name="id" value=`${Id}`)
+                    .user_ID
+                        input(type='text',name='user_id',value=`${user_id}`)
                     .Ahead
                         p 제목
                         |                     
@@ -38,7 +44,7 @@ html(lang='en')
                     if(length>0)
                         ul.commentList
                             -for(let i=0;i<length;i++)
-                                li.comment=array[i]
+                                li.comment=array[i+1]
                     .addComment
                         textarea(name='addComment' placeholder='댓글쓰기')
                     .addCommentBtn

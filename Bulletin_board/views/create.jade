@@ -13,13 +13,16 @@ html(lang='en')
             header
                 h1 게시판 만들기
             |     
-            |         
+            |    
+            
             article
                 .list_header
                     h2 글쓰기
                 |     
                 |             
                 form(action='/finishWrite', method='post')
+                    .user_ID
+                        input(type='text',name="user_id",value=`${user_id}`)
                     .Ahead
                         p 제목
                         |                     

@@ -87,3 +87,11 @@ article .addComment textarea{
 article .addCommentBtn input{
     float: right;
 }
+.idValue{
+    position: absolute;
+    top: -1500px;
+}
+.user_ID{
+    position: absolute;
+    top: -1500px;
+}
